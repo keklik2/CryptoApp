@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CryptoApp v2</string>
+    <string name="short_names">%s / %s</string>
+    <string name="price">%s$</string>
+    <string name="last_update">Последнее обновление: %s</string>
+    <string name="price_title">Цена:</string>
+    <string name="min_price_title">Минимальная цена:</string>
+    <string name="max_price_title">Максимальная цена:</string>
+    <string name="last_deal_title">Последняя сделка:</string>
+    <string name="last_update_title">Последнее обновление:</string>
+</resources>

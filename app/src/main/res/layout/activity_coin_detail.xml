@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.cryptoappv2.CoinDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivDetailLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailLogo"
+
+        tools:text="BTC / USD"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle"
+
+        android:text="@string/price_title"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailPriceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle"
+
+        tools:text="7 000$"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailMinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_price_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailPriceTitle"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="6 990$"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailMinTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailPrice"
+
+        android:textSize="8pt"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailMaxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_price_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMinTitle"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7 098$"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailMaxTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMin"
+
+        android:textSize="8pt"
+        android:textColor="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailLastTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_deal_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMaxTitle"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="AMERICAN BANK"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailLastTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMax"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailUpdateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_update_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLastTitle"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDetailUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="16:34:33"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailUpdateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLast"
+
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
